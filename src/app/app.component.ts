@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Ani-app';
+  showItem = false;
+  showMenu(){
+    if (this.showItem == true) {
+      this.showItem = false;
+    }else{
+      this.showItem = true
+    }
+  }
 }
