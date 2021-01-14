@@ -1,0 +1,13 @@
+.footer{
+    height: 100px;
+    div{
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid black;
+        border-bottom: 1px dashed grey;
+        a{
+            text-decoration: none;
+        }
+    }
+
+}
