@@ -5,27 +5,32 @@
             <div class="col-sm-3" style="height: 100vh;">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">Home</a>
+                      <a class="nav-link active" href="#" routerLink="home">Home</a>
                     </li>
-                    <li class="nav-item dropdown" (click)="showMenu()">
-                        <a  class="nav-link dropdown-toggle" href="#" >Categories</a>
+                    <li class="nav-item dropdown" >
+                        <a  class="nav-link dropdown-toggle" href="#" (click)="showMenu()" >Categories</a>
                         <div  *ngIf='showItem'>
-                          <a class="nav-link" href="#">External</a>
-                          <a class="nav-link" href="#">Internal</a>
-                          <a class="nav-link" href="#">Other</a>      
+                          <a class="nav-link" href="#" routerLink="external">External</a>
+                          <a class="nav-link" href="#" routerLink="internal">Internal</a>
+                          <a class="nav-link" href="#" routerLink="other">Other</a>      
                           </div>                   
                       </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" href="#" routerLink="about">About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Contact Us</a>
+                      <a class="nav-link" href="#" routerLink="contact">Contact Us</a>
                     </li>
                   </ul>
             </div>
 
 
-            <div class="col-sm-9" style="height: 100vh; ">col-sm-4</div>
+            <div class="col-sm-9">
+
+              <router-outlet></router-outlet>
+              
+            </div>
+
           </div>
 
     

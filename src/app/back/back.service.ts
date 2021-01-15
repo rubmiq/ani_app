@@ -34,6 +34,20 @@ export class BackService {
       category: Categories.OTHER,
       img: ['tiletable.jpg']
     },
+    {
+      id: 4,
+      name: 'dddd',
+      description: 'dddddddddd',
+      category: Categories.OTHER,
+      img: ['tiletable.jpg']
+    },
+    {
+      id: 5,
+      name: 'eeee',
+      description: 'eeeeeeeee',
+      category: Categories.EXTERIOR,
+      img: ['tiletable.jpg']
+    },
   ]
 
   constructor() {
