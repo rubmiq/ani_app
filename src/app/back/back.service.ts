@@ -18,7 +18,7 @@ export class BackService {
       name: 'aaaaa',
       description: 'aaaaaaaaaaaaaaaaaaaaaaaaa',
       category: Categories.INTERIOR,
-      img: ['AISS1803.jpg', 'Bildschirmfoto.png']
+      img: ['AISS1803.jpg', 'Bildschirmfoto.png','chairman.jpg', 'DEDON_CIRQL.jpg']
     },
     {
       id: 2,

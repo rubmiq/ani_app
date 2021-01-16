@@ -9,13 +9,16 @@ import { BackService } from '../back/back.service';
 })
 export class ProductComponent implements OnInit {
 productId = this.route.snapshot.paramMap.get("productId");
-
-  constructor(private route:ActivatedRoute, private data:BackService) { 
-    console.log(this.productId);
+data = this.back.data;
+//@ts-ignore
+selectedProduct = this.data.filter(el=>el.id == this.productId)
+images = this.selectedProduct[0].img
+  constructor(private route:ActivatedRoute, private back:BackService) {
+    console.log(this.images);
     
   }
-
+  
   ngOnInit(): void {
   }
-
+  
 }

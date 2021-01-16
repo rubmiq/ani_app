@@ -1,7 +1,13 @@
 .cardStyle{
+    &:hover{
+        cursor: pointer;
+        outline: none;
+    }
     border: 0;
     border-left: 1px solid darkgrey;
     padding: 0 0 0 20px;
     margin: 0;
     border-radius: 0;
 }
+
+
