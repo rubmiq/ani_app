@@ -1,39 +1,39 @@
-<div class="content">
-    <app-header></app-header>
+<div class="container">
+  <app-header></app-header>
+  <div class="row">
 
-        <div class="row text-center">
-            <div class="col-sm-3" style="height: 100vh;">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#" routerLink="home">Home</a>
-                    </li>
-                    <li class="nav-item dropdown" >
-                        <a  class="nav-link dropdown-toggle" href="#" (click)="showMenu()" >Categories</a>
-                        <div  *ngIf='showItem'>
-                          <a class="nav-link" href="#" routerLink="external">External</a>
-                          <a class="nav-link" href="#" routerLink="internal">Internal</a>
-                          <a class="nav-link" href="#" routerLink="other">Other</a>      
-                          </div>                   
-                      </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" routerLink="about">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" routerLink="contact">Contact Us</a>
-                    </li>
-                  </ul>
-            </div>
+    <div class="col-3 text-center">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a  routerLink="home"><h3>Home</h3></a>
+            </li>
+            <li class="nav-item">
+              <ul class="nav flex-column">
+               <li class="nav-item"> <a  [routerLink]="['/home', 'external']">External</a> </li>
+               <li class="nav-item"> <a  [routerLink]="['/home', 'internal']">Internal</a> </li>
+               <li class="nav-item"> <a  [routerLink]="['/home', 'other']">Other</a> </li>
+            </ul>
+            </li>
+            <li class="nav-item">
+              <a routerLink="about"><h3>About</h3></a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="contact"><h3>Contact Us</h3></a>
+            </li>
+          </ul>
+        </div>
 
 
-            <div class="col-sm-9 mainPage">
+    <div class="col-9">
 
-              <router-outlet></router-outlet>
-              
-            </div>
+      <router-outlet></router-outlet>
 
-          </div>
+    </div>
 
-    
+  </div>
 
-    <app-footer></app-footer>
+
+
+  <app-footer></app-footer>
+
 </div>

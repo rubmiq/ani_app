@@ -1,6 +1,11 @@
-.content{
-    margin: 0 300px;
-    // display: flex;
-    // flex-direction: column;
+.categoryItems{
+    color: #959493;
+}
 
+h3{
+    color: #004a75;
+    font-weight: 500;
+    &:hover{
+        color: black;
+    }
 }

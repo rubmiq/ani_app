@@ -1,11 +1,7 @@
-<p>home works!</p>
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+    <div class="col" *ngFor="let item of data">
 
-<p>{{data | json}}</p>
-
-<div class="row">
-    <div class="col-md-12">
-        <div class="card-columns">
-            <div class="card cardStyle" *ngFor="let item of data" [routerLink]="[ '/product', item.id ]">
+            <div class="card h-100 text-center cardStyle" [routerLink]="[ '/product', item.id ]">
                 <div class="card-body">
                     <h2 class="card-title">{{item.name}}</h2>
                     <p class="card-text">{{item.description}}</p>
@@ -13,6 +9,6 @@
                 <img src="assets/images/{{item.img[0]}}" class="card-img-bottom cardImg" alt="...">
                 <p>this is footer</p>
             </div>
+
         </div>
-    </div>
-</div>
+        </div>

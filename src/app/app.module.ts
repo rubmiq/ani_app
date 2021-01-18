@@ -10,9 +10,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
-import { ExternalComponent } from './Categories/external/external.component';
-import { InternalComponent } from './Categories/internal/internal.component';
-import { OtherComponent } from './Categories/other/other.component';
 import { ProductComponent } from './product/product.component';
 
 
@@ -23,10 +20,7 @@ import { ProductComponent } from './product/product.component';
     FooterComponent,
     AboutComponent,
     ContactComponent,
-    HomeComponent,
-    ExternalComponent,
-    InternalComponent,
-    OtherComponent,
+    HomeComponent,  
     ProductComponent
   ],
   imports: [

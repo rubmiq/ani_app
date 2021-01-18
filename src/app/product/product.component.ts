@@ -14,7 +14,7 @@ data = this.back.data;
 selectedProduct = this.data.filter(el=>el.id == this.productId)
 images = this.selectedProduct[0].img
   constructor(private route:ActivatedRoute, private back:BackService) {
-    console.log(this.images);
+    // console.log(this.images);
     
   }
   

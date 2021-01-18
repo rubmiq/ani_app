@@ -6,7 +6,13 @@
                     <h2 class="card-title">{{item.name}}</h2>
                     <p class="card-text">{{item.description}}</p>
                 </div>
-                <img *ngFor="let image of item.img" src="assets/images/{{image}}" class="card-img-bottom cardImg" alt="...">
-                <p>this is footer</p>
+                <img class="w-100"  src="assets/images/{{images[0]}}" class="card-img-bottom cardImg" alt="...">
+                <div class="w-50" *ngFor="let item of images let i = index">
+                <img  *ngIf="i>0" src="assets/images/{{item}}" class="card-img-bottom cardImg" alt="...">
+            </div>
+            <p>this is footer</p>
             </div>
         </div>
+        
+ 
+        
