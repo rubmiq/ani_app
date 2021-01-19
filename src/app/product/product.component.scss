@@ -1,0 +1,19 @@
+.productSection{
+    border-left: 1px solid darkgrey;    
+    .headImg{
+        width: 100%;
+        img{
+            padding: 1rem;
+            width: inherit;
+        }
+    }
+
+    .imgDiv{
+        border-right: 1px solid darkgrey;   
+        width: inherit;
+        padding-right: 1rem;
+        img{
+            width: inherit;
+        }
+    }
+}

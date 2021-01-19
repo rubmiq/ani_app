@@ -11,5 +11,9 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  scroll(){
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
 
 }

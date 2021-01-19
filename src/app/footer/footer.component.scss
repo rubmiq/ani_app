@@ -6,8 +6,12 @@
         border-top: 2px solid black;
         border-bottom: 1px dashed grey;
         a{
+            &:hover{
+                cursor: pointer;
+                color: blue;
+            }
             text-decoration: none;
+            
         }
     }
-
 }

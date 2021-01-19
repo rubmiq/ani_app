@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  timeNow = new Date();
+  constructor() {
+    setInterval(() => {
+      this.timeNow = new Date();
+    }, 1);
+   }
 
   ngOnInit(): void {
   }

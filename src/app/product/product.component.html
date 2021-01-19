@@ -1,18 +1,20 @@
-<p>{{selectedProduct | json}}</p>
-
-        <div class="card-columns">
-            <div class="card cardStyle" *ngFor="let item of selectedProduct" >
-                <div class="card-body">
-                    <h2 class="card-title">{{item.name}}</h2>
-                    <p class="card-text">{{item.description}}</p>
+<!-- <p>{{selectedProduct | json}}</p> -->
+<div class="productSection" *ngFor="let item of selectedProduct">
+    <div class="headImg">
+        <h2 class="text-center">{{item.name}}</h2>
+        <img src="assets/images/{{images[0]}}" alt="...">
+    </div>
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col-lg-8 col-md-6 col-sm-12 ">
+                <div class="imgDiv" *ngFor="let item of images let i = index">
+                    <img *ngIf="i>0" src="assets/images/{{item}}" alt="...">
                 </div>
-                <img class="w-100"  src="assets/images/{{images[0]}}" class="card-img-bottom cardImg" alt="...">
-                <div class="w-50" *ngFor="let item of images let i = index">
-                <img  *ngIf="i>0" src="assets/images/{{item}}" class="card-img-bottom cardImg" alt="...">
             </div>
-            <p>this is footer</p>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <p>{{item.descriptionLong}}</p>
             </div>
         </div>
-        
- 
-        
+    </div>
+</div>
+
